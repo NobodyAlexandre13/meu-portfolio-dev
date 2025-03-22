@@ -228,7 +228,7 @@ header{
     color: #1d719d;
 }
 
-/*Estilização do Sobre*/
+/*Estilização do Skills*/
 .skills{
     width: 90%;
     align-self: center;
@@ -331,6 +331,8 @@ header{
 .iconSkills{
     font-size: 30px;
 }
+
+/*Estilização do Contactos*/
 .contacto{
     width: 90%;
     align-self: center;
@@ -357,11 +359,13 @@ header{
     font-size: 60px;
 }
 .foto_ctnt img{
-    width: 400px;
+    width: 300px;
 }
 .foto_ctnt .textoC{
     text-align: center;
 }
+
+/*Estilização do Projetos*/
 .projetos{
     width: 100%;
     align-self: center;
@@ -375,6 +379,7 @@ header{
     border-radius: 10px;
     position: relative;
     animation: fadeIn 1.5s ease-in-out alternate;
+    overflow: auto;
 }
 .grid{
     margin-top: 40px;
@@ -384,7 +389,8 @@ header{
     width: 100%;
 }
 .projeto{
-    background-color: #1d719d;
+    width: 300px;
+    background-color: #093e5a;
     border-radius: 10px;
     box-shadow: 0 0 5px #1e92d1;
 }
@@ -396,21 +402,39 @@ header{
     padding: 10px;
 }
 .dados .nome{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 .dados .descricao{
-    font-size: 15px;
+    font-size: 13px;
 }
 .links{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px 0;
 }
 .links a{
     color: #fff;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.category .categoryBtn{
+    background-color: #1d719d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.category .categoryBtn:hover{
+    background-color: #1e92d1;
 }
