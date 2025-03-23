@@ -1,4 +1,4 @@
-const textEspecialidade = document.querySelector(".texto_home")
+const textEspecialidade = document.querySelector(".texto_home");
 
 //Animação de digitalização
 

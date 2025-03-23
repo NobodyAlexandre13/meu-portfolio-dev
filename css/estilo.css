@@ -438,3 +438,10 @@ header{
 .category .categoryBtn:hover{
     background-color: #1e92d1;
 }
+
+.botsCategory{
+    display: none;
+}
+.mobileCategory{
+    display: none;
+}
