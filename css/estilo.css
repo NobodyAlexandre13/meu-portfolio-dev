@@ -47,6 +47,9 @@ header{
 
 
 /*Estilização do MENU*/
+.btnOpenMenuMobile{
+    display: none;
+}
 .menu{
     display: flex;
     justify-content: center;
@@ -73,7 +76,6 @@ header{
     opacity: 1;
     z-index: 999;
     font-size: 20px;
-    border-radius: 10px;
 }
 .menu ul .ativo_sobre{
     opacity: 1;
@@ -120,7 +122,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
 }
 
 /*Estilização do HOME*/
@@ -134,7 +135,6 @@ header{
     padding: 2%;
     gap: 10%;
     border-radius: 10px;
-    position: relative;
     animation: fadeIn 1.5s ease-in-out alternate;
 }
 .flex{
@@ -153,29 +153,10 @@ header{
     font-size: 40px;
 }
 .especialidade{
-    position: relative;
     width: 460px;
 }
-.especialidade .texto_home:before{
-    font-size: 40px;
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2e2e2e;
-    border-left: 2px solid #1d719d;
-    animation: cursor 4s steps(12) infinite;
-}
-.especialidade .litghFundo::before{
-    transition: all 2s;
-    background-color: #fff;
-}
-.especialidade .darkFundo::before{
-    transition: all 2s;
-    background-color: #2e2e2e;
+.especialidade .texto_home{
+    font-size: 35px;
 }
 
 @keyframes cursor{
@@ -276,10 +257,6 @@ header{
 .front-end .titulo_tech i{
     font-size: 50px;
 }
-.back-end{
-    padding: 15px;
-    border-radius: 10px;
-}
 .back-end .backend-btn{
     cursor: pointer;
     display: flex;
@@ -340,13 +317,17 @@ header{
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 2%;
     gap: 10%;
     border-radius: 10px;
-    position: relative;
     animation: fadeIn 1.5s ease-in-out alternate;
 }
-
+.flexCt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cntt{
     display: flex;
     justify-content: center;
@@ -361,8 +342,9 @@ header{
 .foto_ctnt img{
     width: 300px;
 }
-.foto_ctnt .textoC{
+.textoC{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /*Estilização do Projetos*/
@@ -377,7 +359,6 @@ header{
     padding: 2%;
     gap: 10%;
     border-radius: 10px;
-    position: relative;
     animation: fadeIn 1.5s ease-in-out alternate;
     overflow: auto;
 }

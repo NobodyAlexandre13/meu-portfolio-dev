@@ -2,19 +2,16 @@ const textEspecialidade = document.querySelector(".texto_home");
 
 //Animação de digitalização
 
-function textLoad(){
+/*function textLoad(){
     setTimeout(()=>{
         textEspecialidade.textContent = 'Desenvolvedor Web'
     }, 0);
     setTimeout(()=>{
         textEspecialidade.textContent = 'Desenvolvedor Mobile'
     }, 4000);
-    setTimeout(()=>{
-        textEspecialidade.textContent = 'Freelancer'
-    }, 8000);
 }
 textLoad();
-setInterval(textLoad, 12000)
+setInterval(textLoad, 8000)*/
 
 //Funcionalidade do menu
 

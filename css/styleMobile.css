@@ -1,0 +1,230 @@
+@media screen and (max-width: 1024px){
+    body{
+        overflow-y: scroll;
+    }
+    header{
+        background-color: #2e2e2e;
+    }
+    .sobre{
+        flex-direction: column-reverse;
+    }
+    .skills{
+        width: 100%;
+    }
+    .tecnologias{
+        width: 270px;
+    }
+    .titulo_tech{
+        font-size: 16px;
+    }
+    .foto_skills img{
+        width: 270px;
+    }
+    .home{
+        width: 100%;
+        margin-top: 15%;
+        gap: 10px;
+    }
+    .titulo_home{
+        font-size: 30px;
+    }
+    .especialidade .texto_home{
+        font-size: 30px;
+    }
+    .especialidade .texto_home:before{
+        font-size: 30px;
+    }
+    .projetos{
+        margin-top: 8%;
+    }
+    @media screen and (max-width: 970px){
+        .home{
+            gap: 5px;
+        }
+        .foto{
+            width: 350px;
+        }
+        .foto img{
+            width: 100%;
+        }
+        .sobre{
+            width: 90%;
+            margin-top: 18%;
+            flex-direction: column-reverse;
+        }
+        .foto_skills img{
+            display: none;
+        }
+        .skills{
+            margin-top: 18%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+    @media screen and (max-width: 877px){
+        header{
+            background-color: #2e2e2e;
+            gap: 30%;
+        }
+    }
+    @media screen and (max-width: 820px){
+        body{
+            overflow-y: auto;
+        }
+        .home, .sobre{
+            flex-direction: column-reverse;
+        }
+        .foto{
+           z-index: -99;
+        }
+    }
+
+    @media screen and (max-width: 735px){
+        @keyframes fadeInRigthMenu {
+            0%{
+                transform: translateY(100%) scale(1);
+            }
+            100%{
+                transform: translateY(0%) scale(1);
+            }
+        }
+        .btnOpenMenuMobile{
+            display: block;
+            font-size: 35px;
+            color: #e6e7ff;
+            cursor: pointer;
+        }
+        .menu{
+            background-color: #1d719d;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 70%;
+            padding: 40px 20px;
+            display: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all .5s;
+            animation: fadeInRigthMenu 1.5s ease-in-out alternate;
+            z-index: 999;
+        }
+        .menu.abrirH{
+            display: block;
+        }
+        .menu ul {
+            flex-direction: column;
+        }
+        .menu ul .btn_menu{
+            font-size: 16px;
+            width: 100%;
+        }
+        .menu ul li:hover{
+            opacity: 1;
+        }
+        .left_home .flex{
+            flex-direction: column-reverse;
+        }
+        .redes_home{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            align-self: start;
+        }
+    }
+    @media screen and (max-width: 540px){
+        .foto, .foto_sobre{
+            width: 300px;
+        }
+        .foto img{
+            width: 100%;
+        }
+        .foto_sobre img{
+            width: 100%;
+        }
+        .home, .sobre{
+            width: 90%;
+            margin-top: 18%;
+        }
+        .titulo_home{
+            font-size: 20px;
+        }
+        .especialidade .texto_home{
+            font-size: 20px;
+        }
+        .especialidade .texto_home:before{
+            font-size: 20px;
+        }
+        .texto_sobre h2{
+            font-size: 20px;
+        }
+        .grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .projetos{
+            margin-top: 18%;
+        }
+        
+        .contacto{
+            margin-top: 16%;
+        }
+        .cntt a, .cntt i{
+            font-size: 30px;
+        }
+        .foto_ctnt img{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 430px){
+        .foto{
+            width: 290px;
+        }
+        .foto img{
+            width: 100%;
+        }
+        .home{
+            width: 100%;
+        }
+        .titulo_home{
+            font-size: 18px;
+        }
+        .especialidade .texto_home{
+            font-size: 18px;
+        }
+        .especialidade .texto_home:before{
+            font-size: 18px;
+        }
+        .frase_home{
+            display: flex;
+            flex-direction: column;
+        }
+        .left_home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .especialidade{
+            width: 100%;
+        }
+        .contacto{
+            margin-top: 20%;
+        }
+        .flexCt{
+            flex-direction: column;
+        }
+        .cntt{
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+}
