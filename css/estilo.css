@@ -426,3 +426,9 @@ header{
 .mobileCategory{
     display: none;
 }
+.mobileCategory .grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
