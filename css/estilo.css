@@ -42,7 +42,7 @@ header{
     font-size: 22px;
 }
 .logo p{
-    font-size: 11px;
+    font-size: 9px;
 }
 
 
@@ -374,6 +374,7 @@ header{
     background-color: #093e5a;
     border-radius: 10px;
     box-shadow: 0 0 5px #1e92d1;
+    padding: 10px;
 }
 .projeto .img img{
     border-radius: 10px;
@@ -398,9 +399,11 @@ header{
 }
 .links a{
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
+    background-color: #1d719d;
+    padding: 6px 10px;
+    border-radius: 5px;
 }
 .category{
     display: flex;
