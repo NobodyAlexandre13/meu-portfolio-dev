@@ -39,6 +39,25 @@ home.addEventListener('click', ()=>{
     contacto_aba.style.display = 'none'
     projeto_aba.style.display = 'none'
 })
+const menuItems = [home, sobre, skills, projectos, contacto]
+menuItems.forEach(item => {
+    item.setAttribute('role', 'button')
+    item.setAttribute('tabindex', '0')
+    item.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault()
+            item.click()
+        }
+    })
+})
+
+const btnContacto = document.querySelector('#btnContacto')
+if (btnContacto) {
+    btnContacto.addEventListener('click', event => {
+        event.preventDefault()
+        contacto.click()
+    })
+}
 sobre.addEventListener('click', ()=>{
     sobre.classList.add('ativo_sobre')
     home.classList.remove('ativo_home')
